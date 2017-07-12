@@ -6,17 +6,17 @@ let directory = document.getElementById("directory")
 
 // console.log(directory)
 
-// for (var i = 0; i < 3; i++) {
-// Create a row for the first four profiles
-let row = document.createElement("div")
-row.classList.add("row")
-directory.appendChild(row)
-
-// Create a row for the first four profiles
-row.classList.add("row")
-directory.appendChild(row)
-
 for (var j = 0; j < customers.results.length; j++) {
+  // for (var i = 0; i < 3; i++) {
+  // Create a row for the first four profiles
+  let row = document.createElement("div")
+  row.classList.add("row")
+  directory.appendChild(row)
+
+  // Create a row for the first four profiles
+  row.classList.add("row")
+  directory.appendChild(row)
+
   let personInfo = customers.results[j]
   // let personSlimInfo = `${personInfo.name.first} ${personInfo.name
   //   .last} ${personInfo.email} ${personInfo.location.street} ${personInfo
