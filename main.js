@@ -8,14 +8,14 @@ let directory = document.getElementById("directory")
 
 for (var j = 0; j < customers.results.length; j++) {
   // for (var i = 0; i < 3; i++) {
-  // Create a row for the first four profiles
-  let row = document.createElement("div")
-  row.classList.add("row")
-  directory.appendChild(row)
+  // Create a container for the first four profiles
+  let container = document.createElement("div")
+  container.classList.add("container")
+  directory.appendChild(container)
 
   // Create a container for the profiles
-  row.classList.add("row")
-  directory.appendChild(row)
+  container.classList.add("container")
+  directory.appendChild(container)
 
   let personInfo = customers.results[j]
   // let personSlimInfo = `${personInfo.name.first} ${personInfo.name
@@ -55,12 +55,12 @@ for (var j = 0; j < customers.results.length; j++) {
   ssnContent.classList.add("ssn")
   ssnContent.innerHTML = ssn
 
-  row.appendChild(image)
-  row.appendChild(nameContent)
-  row.appendChild(emailContent)
-  row.appendChild(addressContent)
-  row.appendChild(phoneContent)
-  row.appendChild(ssnContent)
+  container.appendChild(image)
+  container.appendChild(nameContent)
+  container.appendChild(emailContent)
+  container.appendChild(addressContent)
+  container.appendChild(phoneContent)
+  container.appendChild(ssnContent)
 }
 // }
 // console.log(directory)
