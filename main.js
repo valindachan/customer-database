@@ -26,8 +26,8 @@ for (var j = 0; j < customers.results.length; j++) {
   let picture = personInfo.picture.large
   let name = `${personInfo.name.first} ${personInfo.name.last}`
   let email = personInfo.email
-  let address = `${personInfo.location.street} ${personInfo.location
-    .city} ${personInfo.location.state} ${personInfo.location.postcode}`
+  let address = `<ul>${personInfo.location.street} <li> ${personInfo.location
+    .city} ${personInfo.location.state} ${personInfo.location.postcode} </ul>`
   let phone = personInfo.phone
   let ssn = personInfo.id.value
   // console.log(picture, name, email, address, phone)
@@ -58,6 +58,7 @@ for (var j = 0; j < customers.results.length; j++) {
   row.appendChild(image)
   row.appendChild(nameContent)
   row.appendChild(emailContent)
+  row.appendChild(addressContent)
   row.appendChild(phoneContent)
   row.appendChild(ssnContent)
 }
