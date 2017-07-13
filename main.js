@@ -13,7 +13,7 @@ for (var j = 0; j < customers.results.length; j++) {
   row.classList.add("row")
   directory.appendChild(row)
 
-  // Create a row for the first four profiles
+  // Create a container for the profiles
   row.classList.add("row")
   directory.appendChild(row)
 
